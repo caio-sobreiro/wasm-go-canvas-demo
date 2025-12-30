@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas + WASM Demo (TinyGo)</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #0a0a0a;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: #fff;
+        }
+        h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #888;
+            font-size: 14px;
+        }
+        #canvas {
+            border: 2px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+        #status {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #1a1a1a;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas + WebAssembly Demo</h1>
+    <p>Particle physics simulation running in Go (TinyGo) compiled to WebAssembly</p>
+    <canvas id="canvas"></canvas>
+    <div id="status">Loading WebAssembly...</div>
+
+    <script src="wasm_exec.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
