@@ -30,6 +30,7 @@
             border: 2px solid #333;
             border-radius: 8px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            cursor: crosshair;
         }
         #status {
             margin-top: 20px;
@@ -43,6 +44,7 @@
 </head>
 <body>
     <h1>Canvas + WebAssembly Demo</h1>
+    <p style="color: #666; font-size: 12px;">Click to add particles • Hold mouse to attract them</p>
     <p>Particle physics simulation running in Go (TinyGo) compiled to WebAssembly</p>
     <canvas id="canvas"></canvas>
     <div id="status">Loading WebAssembly...</div>
